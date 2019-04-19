@@ -18,7 +18,7 @@ load('./data/rawData/shipping.RData')
 # We therefore simply format the object for final export of the driver layer.
 
 # Change column name
-colnames(shipping)[1] <- 'shipping'
+colnames(shipping)[1] <- 'Shipping'
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,5 +32,5 @@ save(shipping, file = './Data/Driver/Shipping.RData')
 #                                 VISUALIZE DATA
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 png('./Figures/Shipping.png', width = 1280, height = 1000, res = 200, pointsize = 6)
-plot(shipping[, 'shipping'], border = 'transparent')
+plot(shipping[, 'Shipping'], border = 'transparent')
 dev.off()
