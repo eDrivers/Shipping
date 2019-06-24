@@ -24,8 +24,11 @@ colnames(shipping)[1] <- 'Shipping'
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                  EXPORT DATA
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Change name for uniformity
+Shipping <- shipping
+
 # Export object as .RData
-save(shipping, file = './Data/Driver/Shipping.RData')
+save(Shipping, file = './Data/Driver/Shipping.RData')
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
